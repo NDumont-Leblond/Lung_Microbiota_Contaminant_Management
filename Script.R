@@ -1,7 +1,7 @@
 #This script enable the removal of contaminating OTUs in microbiota dataset based of experimental controls
 
 #As part of a validation protocol for multiple extraction techniques, the script takes in account the extraction methods used as the data set is in triplicat (one for each extraction method). This step can be removed when analysing microbiota samples in a real-life situation.
-#The metadata file must contain a column for the patient ID (e.g.1,2,3,etc.) and the extraction method (e.g.:Blood, Microbial, Powersoil)
+#The metadata file must contain a column for the patient ID (e.g.1,2,3,4,5.) and the extraction method (e.g.:Blood, Microbial, Powersoil)
 
 ##Underlying principal
 #The script first selects a patient and an extraction methods. It then extracts the related sample names. One OTU at a time (row), the script then check the OTU count for the cancerous tissue sample, the healthy tissue and the control sample for each patient and method pairs. 
